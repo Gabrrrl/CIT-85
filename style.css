@@ -1,56 +1,12 @@
-h1 {
-  color: rgb(247, 39, 39);
+div p {
+    background: seagreen;
 }
-li {
-  color: blue;
+div > p {
+background: red;
 }
-#gg {
-  color: purple;
+div ~ p {
+background: rgb(187, 255, 0);
 }
-.color {
-  color: springgreen;
-}
-a:link {
-  color: rgb(252, 0, 0);
-}
-a:visited {
-  color: rgb(0, 245, 12);
-}
-a:hover {
-  color: rgb(25, 0, 255);
-}
-a:active {
-  color: yellow;
-}
-li:first-child {
-background: red !important;
-}
-li:last-child {
-background: yellowgreen !important;
-}
-li:nth-child(even) {
-background: violet;
-}
-li:nth-child(odd) {
-background: blueviolet;
-}
-li:nth-child(6) {
-background: orange;
-}
-li:nth-last-child(6) {
-background: turquoise;
-}
-li:nth-child(55n+10) {
-background: red !important;
-}
-li:only-child {
-background: rgb(0, 255, 55) !important;
-}
-p::first-letter {
-font-size: 200%;
-background: rgb(155, 155, 160);
-}
-p::first-line {
-word-spacing: 200;
-background: sandybrown;
+div + p {
+background: blue;
 }
