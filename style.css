@@ -1,12 +1,55 @@
-div p {
-    background: seagreen;
+/*Targets every p element that is the first child of its parent*/
+p:first-child {
+background: red !important;
 }
-div > p {
-background: red;
+/*Targets every p element that is the last child of its parent*/
+p:last-child {
+background: yellowgreen !important;
 }
-div ~ p {
-background: rgb(187, 255, 0);
+/*Targets all the even p elements*/
+p:nth-child(even) {
+background: violet;
 }
-div + p {
-background: blue;
+/*Targets all the odd p elements*/
+p:nth-child(odd) {
+background: blueviolet;
+}
+/*Targets every p element that is the second child of its parent*/
+p:nth-child(6) {
+background: orange;
+}
+/*Targets the the 9th p element from the last*/
+p:nth-last-child(9) {
+background: turquoise;
+}
+/*Targets every p element that is the second child of its parent, counting from the last child*/
+p:nth-child(5n) {
+background: rgb(238, 255, 6) !important;
+}
+/*Targets the first letter in every p element*/
+p::first-letter {
+  font-size: 50px;
+  color: brown;
+}
+/*Targets the first line in every p element*/
+p::first-line {
+color: white;
+}
+/*Targets the body element in the html file*/
+body {
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/*Targets html, body, p, div, section, h1*/
+html, body, p, div, section h1 {
+  width: auto;
+  height: auto;
+  border: black;
+  border-radius: 1rem;
+  border-style: solid;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
