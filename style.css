@@ -1,3 +1,29 @@
+* {
+  padding: 75px ;
+  height: auto;
+  width: auto;
+}
 div {
-  text-align: center;
-padding: 366px;}
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border: 4px solid black;
+  font-size: 4rem;
+  color: black;
+  margin: auto;
+}
+
+div:hover {
+  color: yellow;
+  background-color: red;
+}
+
+.wow {
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
