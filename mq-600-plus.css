@@ -1,8 +1,7 @@
-ul {
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+body {
+    padding: 0 2em;
 }
 
-a {
-    padding: 1em;
+aside {
+    width: 50%;
 }
